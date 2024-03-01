@@ -6,7 +6,7 @@ detectors = Detectors(125)
 
 
 @app.route('/analyze', methods=['POST'])
-def calculate_sum():
+def analyze():
     try:
         data = request.get_json()
         r_peaks = detectors.engzee_detector(data)
